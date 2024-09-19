@@ -40,12 +40,6 @@ nav a {
 
 .social-link img {
   width: 20px;
-  height: 20px;
-}
-
-.carousel-inner img {
-  width: 1920px;
-  height: 888px;
 }
 
 #about {
@@ -70,16 +64,6 @@ nav a {
   flex: 1;
   margin: 0 20px;
   z-index: 0;
-}
-
-.picture.right img {
-  width: 420px;
-  height: 420px;
-}
-
-.picture.left img {
-  width: 560px;
-  height: 560px;
 }
 
 .picture img {
@@ -113,37 +97,44 @@ nav a {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+
 .gallery nav {
   justify-content: center;
 }
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #dbab27;
   border-radius: 0;
-  font-weight: 600;
+  color: #fff;
 }
+
 .nav-pills .nav-link {
   color: #000;
+  cursor: pointer;
 }
+
 .item-column {
   position: relative;
   margin-bottom: 0 !important;
   padding: 0;
-  width: 424px;
-  height: 424px;
 }
+
 .item-column::after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
+
 .gallery-item {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   padding: 0.5em;
+  cursor: pointer;
 }
+
 .mg-prev,
 .mg-next {
   width: 30px;
@@ -156,16 +147,19 @@ nav a {
 
 .quote {
   font-family: "Spectral";
+  font-style: italic;
   width: 70%;
   margin: auto;
   padding-top: 3em;
   padding-bottom: 3em;
 }
 .quote__text {
-  font-weight: 400;
+  font-family: Spectral;
+  font-weight: 300;
   font-style: italic;
 }
 .quote__author {
+  font-family: Spectral;
   font-weight: 800;
   font-size: 22px;
 }
@@ -175,6 +169,7 @@ nav a {
   background-color: #a8d5d8;
   position: relative;
 }
+
 #services .container::before {
   content: " ";
   background-color: #1c6474;
@@ -215,6 +210,7 @@ nav a {
 #contact .container {
   display: flex;
 }
+
 .picture.right::before {
   content: " ";
   background-color: #beb45a;
@@ -225,15 +221,16 @@ nav a {
   right: 0;
   z-index: -1;
 }
+
 .form-container {
   flex: 2;
 }
+
 form {
   display: flex;
   flex-direction: column;
   width: 70%;
   align-items: flex-start;
-  font-weight: 600;
 }
 
 form input,
@@ -287,8 +284,11 @@ input[type="submit"] {
   .picture.left::before {
     width: 100%;
     height: 30%;
+    position: absolute;
     bottom: auto;
     top: 0;
+    left: 0;
+    z-index: -1;
   }
   .about-me__title {
     text-align: center;
@@ -325,6 +325,10 @@ input[type="submit"] {
   .picture.right::before {
     width: 100%;
     height: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
   }
 }
 
