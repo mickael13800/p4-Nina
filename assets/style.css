@@ -43,7 +43,7 @@ nav a {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  color: black;
 }
 
 #about {
