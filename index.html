@@ -78,16 +78,20 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
+        "@type": "LocalBusiness",
         "name": "Nina Carducci",
         "jobTitle": "Photographe",
+        "image": "https://mickael13800.github.io./assets/images/nina.webp",
+        "url": "https://mickael13800.github.io/p4-Nina/",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "68 avenue Alsace-Lorraine",
           "postalCode": "33200",
-          "addressLocality": "Bordeaux"
+          "addressLocality": "Bordeaux",
+          "addressCountry": "FR"
         },
-        "telephone": "05.56.67.78.89"
+        "telephone": "05.56.67.78.89",
+        "openingHours": "Mo-Fr 10:00-19h00"
       }
     </script>
   </head>
@@ -146,25 +150,67 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
-                class="d-block w-100"
-                alt="Photo d'un homme, vue de dos, en costume marchant dans la rue en tenant un sac"
-              />
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobile.webp
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp
+                  "
+                />
+                <img
+                  src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+                  class="d-block w-100"
+                  alt="Photo d'un homme, vue de dos, en costume marchant dans la rue en tenant un sac"
+                />
+              </picture>
             </div>
             <div class="carousel-item">
-              <img
-                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
-                class="d-block w-100"
-                alt="Photo d'une foule dansant et criant lors d'un concert"
-              />
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-mobile.webp
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp
+                  "
+                />
+                <img
+                  src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+                  class="d-block w-100"
+                  alt="Photo d'une foule dansant et criant lors d'un concert"
+                />
+              </picture>
             </div>
             <div class="carousel-item">
-              <img
-                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-                class="d-block w-100"
-                alt="Photo d'un couple marié s'embrassant au milieu d'une haie d'honneur"
-              />
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mobile.webp
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp
+                  "
+                />
+                <img
+                  src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+                  class="d-block w-100"
+                  alt="Photo d'un couple marié s'embrassant au milieu d'une haie d'honneur"
+                />
+              </picture>
             </div>
           </div>
           <button
